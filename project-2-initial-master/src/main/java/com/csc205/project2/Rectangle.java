@@ -1,0 +1,82 @@
+package com.csc205.project2;
+
+public class Rectangle extends Shape {
+
+
+    private double l;
+    private double w;
+    private double h;
+
+    /*-----------CONSTRUCTORS------------*/
+
+    // default
+    public Rectangle() {
+        l = 0;
+        w = 0;
+        h = 0;
+
+        //Shape.setName("Rectangle");
+    }
+
+    // overload
+    public Rectangle(double length, double width, double height) {
+        l = length;
+        w = width;
+        h = height;
+
+        //Shape.setName("Rectangle");
+    }
+
+    /*----------SETTERS-----------*/
+
+    public void setL(double l) {
+        this.l = l;
+    }
+
+    public void setW(double w) {
+        this.w = w;
+    }
+
+    public void setH(double h) {
+        this.h = h;
+    }
+
+    /*-----------GETTERS----------*/
+
+    public double getW() {
+        return w;
+    }
+
+    public double getH() {
+        return h;
+    }
+
+    public double getL() {
+        return l;
+    }
+
+    /*----------CALCULATIONS-----------*/
+
+    public double surfaceArea() {
+        return (2 * l * h) + (2 * l * w) + (2 * w * h);
+    }
+
+    public double volume() {
+        return l * w * h;
+    }
+
+    /*------------TO-STRING---------*/
+
+    @Override
+    public String toString() {
+        //final StringBuilder sb = new StringBuilder(getName() + " {");
+        final StringBuilder sb = new StringBuilder("Rectangle {");
+        sb.append("length=").append(l);
+        sb.append(", width=").append(w);
+        sb.append(", height=").append(h);
+        sb.append(", surface area=").append(surfaceArea());
+        sb.append(", volume=").append(volume());
+        sb.append('}');
+        return sb.toString();
+    }
+}

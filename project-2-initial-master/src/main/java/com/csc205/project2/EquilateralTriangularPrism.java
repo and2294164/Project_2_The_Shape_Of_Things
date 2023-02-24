@@ -54,12 +54,16 @@ public class EquilateralTriangularPrism extends Shape{
 
     /*-----CALCULATIONS-----*/
 
-    double surfaceArea() {
-        return (b * h) + 3 * (b * l);
+    @Override
+    public double surfaceArea() {
+        sa = (b * h) + 3 * (b * l);
+        return sa;
     }
 
-    double volume() {
-        return (1.0/2.0 * b * h) * l;
+    @Override
+    public double volume() {
+        v = (1.0/2.0 * b * h) * l;
+        return v;
     }
 
     /*-----TO-STRING-----*/

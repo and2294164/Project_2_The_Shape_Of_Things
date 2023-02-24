@@ -43,12 +43,16 @@ public class Cylinder extends Shape{
 
     /*-----CALCULATIONS-----*/
 
+    @Override
     public double surfaceArea() {
-        return (double) Math.round( ((2 * Math.PI * r * h) + (2 * Math.PI * Math.pow(r, 2))) * 100) / 100;
+        sa = (double) Math.round( ((2 * Math.PI * r * h) + (2 * Math.PI * Math.pow(r, 2))) * 100) / 100;
+        return sa;
     }
 
+    @Override
     public double volume() {
-        return (double) Math.round( (Math.PI * Math.pow(r, 2) * h) * 100) / 100;
+        v = (double) Math.round( (Math.PI * Math.pow(r, 2) * h) * 100) / 100;
+        return v;
     }
 
     /*-----TO-STRING-----*/
@@ -64,4 +68,8 @@ public class Cylinder extends Shape{
         sb.append('}');
         return sb.toString();
     }
+
+
+
+
 }

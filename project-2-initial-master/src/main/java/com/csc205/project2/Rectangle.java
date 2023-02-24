@@ -14,8 +14,7 @@ public class Rectangle extends Shape {
         l = 0;
         w = 0;
         h = 0;
-
-        //Shape.setName("Rectangle");
+        name = "Rectangle";
     }
 
     // overload
@@ -23,8 +22,8 @@ public class Rectangle extends Shape {
         l = length;
         w = width;
         h = height;
+        name = "Rectangle";
 
-        //Shape.setName("Rectangle");
     }
 
     /*----------SETTERS-----------*/
@@ -58,11 +57,13 @@ public class Rectangle extends Shape {
     /*----------CALCULATIONS-----------*/
 
     public double surfaceArea() {
-        return (2 * l * h) + (2 * l * w) + (2 * w * h);
+        sa = (2 * l * h) + (2 * l * w) + (2 * w * h);
+        return sa;
     }
 
     public double volume() {
-        return l * w * h;
+        v = l * w * h;
+        return v;
     }
 
     /*------------TO-STRING---------*/

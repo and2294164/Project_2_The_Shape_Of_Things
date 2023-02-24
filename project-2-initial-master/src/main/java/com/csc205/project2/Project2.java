@@ -13,7 +13,6 @@ import java.util.List;
 public class Project2 {
 
     public static void main(String[] args) {
-
         /*
         The following code works with the example design given.
          */
@@ -43,6 +42,8 @@ public class Project2 {
         //Sphere sphere = new Sphere(2.0);
         //System.out.println(sphere);
     }
+
+
 
 }
 

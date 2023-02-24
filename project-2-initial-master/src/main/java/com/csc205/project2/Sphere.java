@@ -27,12 +27,16 @@ public class Sphere extends Shape{
         this.radius = radius;
     }
 
+    @Override
     public double surfaceArea() {
-        return (double) Math.round((4.0 * Math.PI * Math.pow(radius, 2)) * 100) / 100;          // rounded to 2nd decimal place
+        sa = (double) Math.round((4.0 * Math.PI * Math.pow(radius, 2)) * 100) / 100;    // rounded to 2nd decimal place
+        return sa;
     }
 
+    @Override
     public double volume() {
-        return (double) Math.round((4.0/3.0) * Math.PI * Math.pow(radius, 3) * 100) / 100;      // rounded to 2nd decimal place
+        v = (double) Math.round((4.0/3.0) * Math.PI * Math.pow(radius, 3) * 100) / 100; // rounded to 2nd decimal place
+        return v;
     }
 
     @Override

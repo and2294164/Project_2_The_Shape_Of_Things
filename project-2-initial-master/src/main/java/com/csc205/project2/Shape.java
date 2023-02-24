@@ -2,28 +2,29 @@ package com.csc205.project2;
 
 abstract class Shape implements ThreeDimensionalShape{
 
-    private static String name;
-    private static double sa;
-    private static double a;
+    //TODO: MAKE THESE INTO ARRAYS
+    protected String name;
+    protected double sa;
+    protected double v;
 
     /*-----------------CONSTRUCTORS------------------*/
 
     public Shape() {
         name = "no name";
         sa = 0.0;
-        a = 0.0;
+        v = 0.0;
     }
 
-    public Shape(String Name, double surfaceArea, double a) {
+    public Shape(String Name, double surfaceArea, double v) {
         name = Name;
         sa = surfaceArea;
-        a = a;
+        v = v;
 
     }
 
     /*----------------SETTER-&-GETTER---------------*/
 
-
+    /*
     public static void setSa(double surfaceArea) {
         sa = surfaceArea;
     }
@@ -47,6 +48,7 @@ abstract class Shape implements ThreeDimensionalShape{
     public static double getArea() {
         return a;
     }
+     */
 
 
 }
